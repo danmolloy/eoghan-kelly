@@ -15,8 +15,8 @@ export default function Section() {
   const sendingMsg = (<div><h2 className="">Message sending...</h2></div>)
 
   return (
-    <section className="flex flex-col items-center  justify-between p-2 py-8 text-sm bg-dark text-light rounded-lg w-full mx-8 md:w-3/4">
-            <div className="w-full  border-black">
+    <section className="flex flex-col items-center justify-between p-2 py-8 text-sm bg-dark text-light rounded-lg w-full mx-8 md:w-3/4">
+            <div className="  border-black">
 
       <h1 className='self-center ml-2 font-medium text-lg'>CONTACT</h1>
       </div>
@@ -57,7 +57,7 @@ export default function Section() {
         })
       }}> 
       {(props) => (
-      <Form data-testid="contact-form" className="z-10  flex flex-col  self-center w-full ">
+      <Form data-testid="contact-form" className="  flex flex-col  self-center w-full ">
 
           <div className="flex flex-col m-2">
           <label htmlFor='name-input' className="form-label dark:text-zinc-400 text-sm">Name</label>
@@ -116,7 +116,7 @@ export default function Section() {
       </div>
       </Form> )}
     </Formik>
-                      <Image  alt="Eoghan Kelly" width={250} height={250} src={"https://fillmurray.lucidinternets.com/g/250/250"}/>
+                      <Image  alt="Eoghan Kelly" width={300} height={300} src={"https://fillmurray.lucidinternets.com/300/300"}/>
           
     </section>
   )

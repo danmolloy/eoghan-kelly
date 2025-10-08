@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Nunito_Sans, Roboto_Slab, Rubik } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const customText = Nunito_Sans({
+  variable: "--font-custom",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const customTitle = Nunito_Sans({
+  variable: "--font-title",
   subsets: ["latin"],
 });
 
@@ -27,10 +27,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${customText.variable} ${customTitle.variable} antialiased flex flex-col justify-between min-h-screen `}
       >
         <Header />
-        <div className="min-h-[80vh] p-4">
+        <div className="font-custom p-2 flex flex-col items-center">
           {children}
         </div>
         <Footer />
